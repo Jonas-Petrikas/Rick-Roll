@@ -9,10 +9,16 @@
     <title>Very serious website</title>
 </head>
 <h1>Laba diena</h1>
-<video width="100%" autoplay>
+<video id="vid" width="100%" heigth="100%" muted>
     <source src="Rick Astley - Never Gonna Give You Up (Official Music Video).mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
+
+<script>
+    const video = document.getElementById('vid')
+    document.getElementById('vid').play();
+    video.muted = !video.muted;
+</script>
 
 <a href="index.html" target="_blank"><button>tekstas</button></a>
 
